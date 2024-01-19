@@ -1,0 +1,17 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "include": [
+    "./env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "vite.config.*",
+    "nightwatch.conf.*",
+    "playwright.config.*"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"]
+  }
+}
